@@ -2,6 +2,10 @@ import * as React from "react";
 import Header from "./Header";
 import HeroList, { HeroListItem } from "./HeroList";
 import TextInsertion from "./TextInsertion";
+import TableInsertion from "./TableInsertion";
+import TableFilter from "./Table_Filter";
+import TableSort from "./Table_Sort";
+
 import { makeStyles } from "@fluentui/react-components";
 import { Ribbon24Regular, LockOpen24Regular, DesignIdeas24Regular } from "@fluentui/react-icons";
 
@@ -39,6 +43,9 @@ const App = (props: AppProps) => {
       <Header logo="assets/logo-filled.png" title={props.title} message="Welcome" />
       <HeroList message="Discover what this add-in can do for you today!" items={listItems} />
       <TextInsertion />
+      <TableInsertion />
+      <TableFilter />
+      <TableSort />
     </div>
   );
 };
