@@ -5,6 +5,8 @@ import TextInsertion from "./TextInsertion";
 import TableInsertion from "./TableInsertion";
 import TableFilter from "./Table_Filter";
 import TableSort from "./Table_Sort";
+import TableFreezeHeaders from "./Table_freeze_Headers";
+import CreateChart from "./CreatChart";
 
 import { makeStyles } from "@fluentui/react-components";
 import { Ribbon24Regular, LockOpen24Regular, DesignIdeas24Regular } from "@fluentui/react-icons";
@@ -46,6 +48,8 @@ const App = (props: AppProps) => {
       <TableInsertion />
       <TableFilter />
       <TableSort />
+      <TableFreezeHeaders />
+      <CreateChart />
     </div>
   );
 };
